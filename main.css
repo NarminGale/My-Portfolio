@@ -292,6 +292,11 @@ ul {
   letter-spacing: 0.01rem;
 }
 
+.about-me h2 span:nth-of-type(2),
+.portfolio h2 span:nth-of-type(2),
+.contact h2 span:nth-of-type(2) {
+  color: #ffb400;
+}
 .info h2,
 .info h1,
 .info h3 {
@@ -311,4 +316,5 @@ ul {
 .info h3 {
   font-size: 25px;
   font-weight: 600;
+  color: #ffb400;
 }
