@@ -268,8 +268,8 @@ ul {
   background-color: var(--primary-800);
   grid-row: span 2;
   /* background: url(./IMG_20190929_165956.jpg); */
-  background-position: center;
-  background-size: cover;
+  /* background-position: center;
+  background-size: cover; */
 }
 
 .about-me,
@@ -311,6 +311,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .info h2 span {
