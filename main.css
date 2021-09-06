@@ -282,7 +282,9 @@ ul {
 .portfolio,
 .contact {
   background-color: var(--primary-800);
+  cursor: pointer;
 }
+
 .about-me h2,
 .portfolio h2,
 .contact h2 {
@@ -290,13 +292,23 @@ ul {
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 0.01rem;
+  overflow: hidden;
 }
 
-.about-me h2 span:nth-of-type(2),
-.portfolio h2 span:nth-of-type(2),
-.contact h2 span:nth-of-type(2) {
+.about-me h2 span,
+.portfolio h2 span,
+.contact h2 span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-me h2 span:nth-child(2),
+.portfolio h2 span:nth-child(2),
+.contact h2 span:nth-child(2) {
   color: #ffb400;
 }
+
 .info h2,
 .info h1,
 .info h3 {
@@ -317,4 +329,34 @@ ul {
   font-size: 25px;
   font-weight: 600;
   color: #ffb400;
+}
+
+.about-me h2 span:nth-child(1)::before,
+.portfolio h2 span:nth-child(1)::before,
+.contact h2 span:nth-child(1)::before {
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffb400;
+  top: 105%;
+}
+
+.about-me h2 span:nth-child(2)::before,
+.portfolio h2 span:nth-child(2)::before,
+.contact h2 span:nth-child(2)::before {
+  position: absolute;
+  content: attr(data-hover);
+  color: white;
+  bottom: 105%;
+}
+
+.about-me:hover h2 span:nth-child(1),
+.portfolio:hover h2 span:nth-child(1),
+.contact:hover h2 span:nth-child(1) {
+  transform: translateY(-105%);
+}
+
+.about-me:hover h2 span:nth-child(2),
+.portfolio:hover h2 span:nth-child(2),
+.contact:hover h2 span:nth-child(2) {
+  transform: translateY(105%);
 }
