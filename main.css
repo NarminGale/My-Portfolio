@@ -253,6 +253,7 @@ ul {
   margin-top: -1rem;
 }
 
+/* main styling begins */
 .container {
   height: 100vh;
   padding: 1.5rem;
@@ -266,21 +267,17 @@ ul {
 .main-image {
   background-color: var(--primary-800);
   grid-row: span 2;
+  /* background: url(./IMG_20190929_165956.jpg); */
+  background-position: center;
+  background-size: cover;
 }
 
-.info,
 .about-me,
 .portfolio,
 .contact {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.about-me,
-.portfolio,
-.contact {
   background-color: var(--primary-800);
   cursor: pointer;
 }
@@ -309,23 +306,33 @@ ul {
   color: #ffb400;
 }
 
-.info h2,
-.info h1,
-.info h3 {
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h2 span {
   text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
-.info h2 {
-  font-size: 20px;
+.info h2 span:nth-child(1) {
+  color: #eee;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
-.info h1 {
-  font-size: 35px;
+.info h2 span:nth-child(2) {
+  font-size: 34px;
+  line-height: 0.8;
   font-weight: bold;
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
-.info h3 {
+.info h2 span:nth-child(3) {
   font-size: 25px;
   font-weight: 600;
   color: #ffb400;
