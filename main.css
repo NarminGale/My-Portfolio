@@ -314,6 +314,10 @@ ul {
   cursor: default;
 }
 
+.info h2 {
+  min-height: 131px;
+}
+
 .info h2 span {
   text-transform: uppercase;
   display: block;
