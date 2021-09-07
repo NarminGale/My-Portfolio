@@ -5,7 +5,7 @@ let currentWord = []
 let isDeleting = false
 let isEnd = false
 
-function loop() {
+function typewriter() {
   isEnd = false
   $('.text-type').html(currentWord)
 
@@ -40,7 +40,7 @@ function loop() {
   const speedUp = 60
   const normalSpeed = 160
   const time = isEnd ? 900 : isDeleting ? speedUp : normalSpeed
-  setTimeout(loop, time)
+  setTimeout(typewriter, time)
 }
 
-loop()
+typewriter()
