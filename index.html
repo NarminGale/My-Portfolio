@@ -19,34 +19,45 @@
   <body>
     <section class="container">
       <div class="main-image"></div>
-      <div class="info">
+      <section class="info">
         <h2>
           <span>Hi there ! I'm</span>
           <span>Narmin Aliyeva</span>
           <span class="text-type"></span>
         </h2>
-      </div>
-      <div class="about-me">
-        <h2>
-          <span data-hover="about">about</span>&nbsp;<span data-hover="me"
-            >me</span
-          >
-        </h2>
-      </div>
-      <div class="portfolio">
-        <h2>
-          <span data-hover="my">my</span>&nbsp;<span data-hover="portfolio"
-            >portfolio</span
-          >
-        </h2>
-      </div>
-      <div class="contact">
-        <h2>
-          <span data-hover="get">get</span>&nbsp;<span data-hover="in touch"
-            >in touch</span
-          >
-        </h2>
-      </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me--box">
+          <h2>
+            <span data-hover="about">about</span>&nbsp;<span data-hover="me"
+              >me</span
+            >
+          </h2>
+        </div>
+        <div class="about-me--content"></div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio-box">
+          <h2>
+            <span data-hover="my">my</span>&nbsp;<span data-hover="portfolio"
+              >portfolio</span
+            >
+          </h2>
+        </div>
+        <div class="portfolio-content"></div>
+      </section>
+      <section class="contact">
+        <div class="contact-box">
+          <h2>
+            <span data-hover="get">get</span>&nbsp;<span data-hover="in touch"
+              >in touch</span
+            >
+          </h2>
+        </div>
+        <div class="contact-content">
+          <img src="./images/letter-x.svg" alt="" class="times-icon" />
+        </div>
+      </section>
     </section>
 
     <!-- jquery js -->
@@ -57,5 +68,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./script.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
