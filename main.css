@@ -263,6 +263,7 @@ ul {
   grid-gap: 24px;
   background-color: var(--primary-900);
   position: relative;
+  overflow: hidden;
 }
 
 .main-image {
@@ -375,28 +376,36 @@ ul {
 }
 
 /* contact section */
-/* .contact {
-  width: 100%;
-  height: 100%;
-} */
-
 .contact-content {
-  width: 0.1%;
-  height: 0.1%;
-}
-.contact-content.active {
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 65%;
-  height: 93%;
   background-color: #222;
+  height: 8%;
+  width: 64.8%;
+  top: 24px;
+  right: 24px;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
   cursor: auto;
+  /* visibility: hidden; */
+  /* opacity: 0; */
 }
+
+.contact-content.active {
+  height: 92.4%;
+  /* width: 64.8%; */
+  /* visibility: visible; */
+  opacity: 1;
+}
+
 .times-icon {
-  height: 100px;
-  height: 100px;
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+
+  opacity: 0;
 }
 
 @media screen and (max-width: 992px) {
