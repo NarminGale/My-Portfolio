@@ -376,30 +376,43 @@ ul {
 }
 
 /* contact section */
+
+/* .contact-content > .page-title {
+  transition: all 0.05s ease-in-out;
+} */
 .contact-content {
   background-color: #222;
-  height: 8%;
+  height: 0;
   width: 64.8%;
   top: 24px;
   right: 24px;
   position: absolute;
-  transition: all 0.4s ease-in-out;
   cursor: auto;
-  /* visibility: hidden; */
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
   /* opacity: 0; */
 }
 
 .contact-content.active {
   height: 92.4%;
-  /* width: 64.8%; */
-  /* visibility: visible; */
-  opacity: 1;
+  visibility: visible;
+  /* opacity: 1; */
 }
 
+.page-title h2 span:nth-child(2) {
+  color: #ffb400;
+}
+.page-title h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 55px;
+  letter-spacing: 0.01rem;
+}
 .times-icon {
   position: absolute;
-  top: 32px;
-  right: 48px;
+  top: 60px;
+  right: 76px;
   width: 30px;
   cursor: pointer;
   z-index: 100;
