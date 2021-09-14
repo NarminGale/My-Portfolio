@@ -377,9 +377,9 @@ ul {
 
 /* contact section */
 
-/* .contact-content > .page-title {
-  transition: all 0.05s ease-in-out;
-} */
+.contact-content > .page-title > h2 {
+  transition: opacity 0.1s ease-in-out;
+}
 .contact-content {
   background-color: #222;
   height: 0;
@@ -389,26 +389,29 @@ ul {
   position: absolute;
   cursor: auto;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
 
-  /* opacity: 0; */
+  padding: 3.4rem 2rem;
+  overflow-y: scroll;
 }
 
 .contact-content.active {
   height: 92.4%;
   visibility: visible;
-  /* opacity: 1; */
 }
 
 .page-title h2 span:nth-child(2) {
   color: #ffb400;
 }
+
 .page-title h2 {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 55px;
   letter-spacing: 0.01rem;
+  text-align: center;
+  opacity: 1;
 }
+
 .times-icon {
   position: absolute;
   top: 60px;
@@ -416,9 +419,87 @@ ul {
   width: 30px;
   cursor: pointer;
   z-index: 100;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
   opacity: 0;
+}
+.divider {
+  margin-top: 1.4rem;
+  text-align: center;
+}
+
+.divider span:first-of-type,
+.divider span:last-of-type {
+  display: inline-block;
+  width: 25%;
+  border-bottom: 1px solid #666;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.divider span:nth-child(2) {
+  font-size: 20px;
+  margin: 0 20px;
+  color: #ffb400;
+}
+
+.contact-section .left-side {
+  border: 1px solid #333;
+  color: #eee;
+  background: #111;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.contact-section .left-side span {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-section .left-side span i {
+  color: rgba(255, 255, 255, 0.3);
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.contact-section .left-side h6 {
+  color: #ffb400;
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 110%;
+}
+
+.contact-section .left-side .social .social-intro {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.contact-section .left-side .social .social-intro .facebook a,
+.contact-section .left-side .social .social-intro .linkedin a {
+  background: #3b5998;
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-section .left-side .social .social-intro .linkedin a {
+  background: #0077b5;
+}
+
+.contact-section .left-side .social .social-intro .github {
+  font-size: 2.2rem;
+  margin-top: -0.8rem;
+}
+.contact-section .left-side .social .social-intro .github a {
+  color: rgb(85, 85, 85);
 }
 
 @media screen and (max-width: 992px) {
