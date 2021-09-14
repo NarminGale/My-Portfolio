@@ -390,7 +390,7 @@ ul {
   cursor: auto;
   visibility: hidden;
 
-  padding: 3.4rem 2rem;
+  padding: 3.4rem 2rem 5.2rem;
   overflow-y: scroll;
 }
 
@@ -424,7 +424,8 @@ ul {
   opacity: 0;
 }
 .divider {
-  margin-top: 1.4rem;
+  margin-top: 1.49rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
